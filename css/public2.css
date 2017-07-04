@@ -4,113 +4,39 @@ html body {
 }
 html body .container {
   width: 100%;
-  max-width: 500px;
-  height: 500px;
+  max-width: 600px;
+  max-height: 600px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
-html body .container .npc, html body .container .me {
-  border: 1px solid red;
+html body .container .npc, html body .container .me, html body .container .message {
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  border: 1px solid black;
+}
+html body .container .npc {
   display: flex;
   flex-direction: row;
+}
+html body .container .npc .left, html body .container .npc .right {
   width: 100%;
+  border: 1px solid green;
+}
+html body .container .npc .left {
+  display: flex;
+  flex-direction: column;
+}
+html body .container .npc .left .top, html body .container .npc .left .down {
   height: 100%;
-  margin: 0;
-  padding: 0;
-}
-html body .container .npc .left, html body .container .npc .right, html body .container .me .left, html body .container .me .right {
-  width: 50%;
-  height: 100%;
-  border: 1px solid blue;
-}
-html body .container .npc .top {
-  position: relative;
-  top: 0;
-  left: 0;
-  border: 1px solid green;
-  padding-left: 10px;
-}
-html body .container .npc .left .blood {
-  width: calc(100% - 10px);
-  height: 60px;
-}
-html body .container .npc .left .blood h4 {
-  margin: 5px 0;
-}
-html body .container .npc .left .blood div {
-  position: absolute;
-  left: 10px;
-  bottom: 0;
-  margin: 5px 0;
-  width: calc( 100% - 100px );
-  border-bottom: 5px solid black;
-  border-left: 5px solid black;
-  border-radius: 0 0 0 5px;
-}
-html body .container .npc .left .blood div span:first-child {
-  display: inline-block;
-  width: 30px;
-}
-html body .container .npc .left .blood div span:first-child:before {
-  content: 'HP: ';
-}
-html body .container .npc .left .blood div span:nth-child(2) {
-  display: inline-block;
-  width: calc( 100% - 50px );
-  border-radius: 10px;
-  border: 1px solid black;
-  background: red;
-  height: 15px;
-}
-html body .container .npc .right .baby {
-  width: calc(100% - 10px);
-  height: 350px;
-}
-html body .container .me .left .bottom {
-  position: relative;
-  bottom: calc(350px - 100%);
-  right: 0;
-  padding-left: 10px;
   border: 1px solid green;
 }
-html body .container .me .right .bottom {
-  position: relative;
-  bottom: calc(100px - 100%);
-  right: 0;
-  padding-left: 10px;
+html body .container .npc .right {
+  display: flex;
+  flex-direction: column;
+}
+html body .container .npc .right .top, html body .container .npc .right .down {
+  width: 100%;
   border: 1px solid green;
-}
-html body .container .me .right .blood {
-  width: calc(100% - 10px);
-  height: 60px;
-}
-html body .container .me .right .blood h4 {
-  margin: 5px 0;
-}
-html body .container .me .right .blood div {
-  position: absolute;
-  right: 10px;
-  bottom: 0;
-  margin: 5px 0;
-  margin-right: 0;
-  width: calc( 100% - 100px );
-  border-bottom: 5px solid black;
-  border-right: 5px solid black;
-  border-radius: 0 0 5px 0;
-}
-html body .container .me .right .blood div span:first-child {
-  display: inline-block;
-  width: 30px;
-}
-html body .container .me .right .blood div span:first-child:before {
-  content: 'HP: ';
-}
-html body .container .me .right .blood div span:nth-child(2) {
-  display: inline-block;
-  width: calc( 100% - 50px );
-  border-radius: 10px;
-  border: 1px solid black;
-  background: red;
-  height: 15px;
 }
