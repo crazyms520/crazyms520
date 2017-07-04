@@ -13,197 +13,157 @@ html {
         display: inline-block;
         width: 100%;
         height: 200px; //要有東西才可以有框框 calc( 100% / 3px )
-        border: 1px solid black;
+        // border: 1px solid black;
       }
       .npc{
         display: flex;
         flex-direction: row;
-
         .left, .right {
-          width: 100%;
-          border: 1px solid green;
-        }
-
-        .left {
           display: flex;
           flex-direction: column;
+          width: 100%;
+          // border: 1px solid green;
           .top, .down {
             height: 100%;
-            border: 1px solid green;
+            // border: 1px solid green;
           }
         }
-
-        .right {
-          display: flex;
-          flex-direction: column;
-          .top, .down {
+        .blood {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          
+          h4 {
+            width: calc(100% - 10px);
+            padding: 10px 5px 10px 10px ;
+            margin: 0;
+            letter-spacing: 6px
+          }
+          div {
+            display: inline;
+            border-left: 5px solid black;
+            border-bottom: 5px solid black;
+            margin-left: 10px;
+            span:nth-child(1) {
+              display: inline-block;
+              width: 30px;        
+              &:before {
+                content: 'HP: ';
+                padding-left: 5px;
+              }
+            }
+            span:nth-child(2) {
+              display: inline-block;
+              padding: 0 calc(50% - 50px);
+              // width: calc( 100% - 50px );
+              border-radius: 10px;
+              // border: 1px solid black;
+              background: red;
+              height: 15px;
+            }
+          }
+        }
+        .baby {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          img {
             width: 100%;
-            border: 1px solid green;
+            height: 100%;
           }
         }
-        // border: 1px solid red;
-        // display: flex;
-        // flex-direction: row ;
-        // width: 100%;
-        // // height: 100%;
-        // margin: 0;
-        // padding: 0;
-        // .left,.right {
-        //   width: 50%;
-        //   height: 100%;
-        //   border: 1px solid blue;
-        // }
-        // .left{
-        //   .blood {
-        //     width: calc(100% - 10px);
-        //     height: 60px;
-        //     h4 {
-        //       margin: 5px 0;
-        //       padding-left: 10px;
-        //       letter-spacing: 8px;
-        //     }
-        //     div {
-        //       position: absolute;
-        //       left: 10px;
-        //       bottom: 0;
-        //       margin: 5px 0;
-        //       width: calc( 100% - 100px );
-        //       border-bottom: 5px solid black;
-        //       border-left: 5px solid black;
-        //       border-radius: 0 0 0 5px;
-        //       span:first-child {
-        //         display: inline-block;
-        //         width: 30px;        
-        //         &:before {
-        //           content: 'HP: ';
-        //           padding-left: 5px;
-        //           font-weight: bolder;
-        //         }
-        //       }
-        //       span:nth-child(2) {
-        //         display: inline-block;
-        //         width: calc( 100% - 50px );
-        //         border-radius: 10px;
-        //         border: 1px solid black;
-        //         background: red;
-        //         height: 15px;
-        //       }
-        //     }
-        //   }
-        //   .top {
-        //     position:relative;
-        //     top: 0;
-        //     left: 0;
-        //     padding-left: 10px;
-        //     border: 1px solid green;
-        //   }
-        // }
-        // .right {
-        //   .top {
-        //     position:relative;
-        //     top: 0;
-        //     left: 0;
-        //     padding-right: 10px;
-            
-        //     border: 1px solid green;
-        //   }
-        //   .baby {
-        //     width: calc(100% - 10px);
-        //     height: 250px;
-        //     .images{
-        //       display: inline-block;
-        //       text-align: center;     
-        //       width: 100%;
-        //       height: 50%;
-        //       border: 1px solid green;
-        //       img {                           
-        //         max-width: 100%;
-        //         width: auto;
-        //         max-height: 100%;
-        //         height: auto;
-        //       }
-        //     }
-        //   }
-        // }
       }
       .me {
-        // border: 1px solid red;
-        // display: flex;
-        // flex-direction: row ;
-        // width: 100%;
-        // height: 25%;
-        // margin: 0;
-        // padding: 0;
-        // .left {
-        //   position: relative;
-        //   .bottom {
-        //     position:relative;
-        //     bottom: calc(250px - 100%);
-        //     right: 0;
-        //     padding-left: 10px;
-        //     border: 1px solid green;
-        //   }
-        //   .baby {
-        //     width: calc(100% - 10px);
-        //     height: 250px;
-        //     .images{
-        //       display: inline-block;
-        //       text-align: center;     
-        //       width: 100%;
-        //       height: 50%;
-        //       border: 1px solid green;
-        //       img {                           
-        //         max-width: 100%;
-        //         width: auto;
-        //         max-height: 100%;
-        //         height: auto;
-        //       }
-        //     }
-        //   }
-        // }
-        // .right {
-        //   position: relative;
-        //   .bottom {
-        //     padding-left: 10px;
-        //     border: 1px solid green;
-        //   }
-        //   .blood {
-        //     width: calc(100% - 10px);
-        //     height: 60px;
-        //     h4 {
-        //       margin: 5px 0;
-        //       padding-right: 10px;
-        //       letter-spacing: 8px;
-        //     }
-        //     div {
-        //       margin: 5px 0;
-        //       margin-right: 0;
-        //       width: calc( 100% - 100px );
-        //       border-bottom: 5px solid black;
-        //       border-right: 5px solid black;
-        //       border-radius: 0 0 5px 0;
-        //       span:first-child {
-        //         display: inline-block;
-        //         width: 30px;        
-        //         &:before {
-        //           content: 'HP: ';
-        //           padding-left: 5px;
-        //           font-weight: bolder;
-        //         }
-        //       }
-        //       span:nth-child(2) {
-        //         display: inline-block;
-        //         width: calc( 100% - 50px );
-        //         border-radius: 10px;
-        //         border: 1px solid black;
-        //         background: red;
-        //         height: 15px;
-        //       }
-        //     }
-        //   }
-        // }
+        display: flex;
+        flex-direction: row;
+        .left, .right {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          // border: 1px solid green;
+          .top, .down {
+            height: 100%;
+            // border: 1px solid green;
+          } 
+        }
+        .blood {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          text-align: right;
+          h4 {
+            width: 100%;
+            padding: 10px 5px 10px 0 ;
+            margin: 0;
+            letter-spacing: 6px
+          }
+          div {
+            display: inline;
+            border-right: 5px solid black;
+            border-bottom: 5px solid black;
+            margin-right: 10px;
+            padding-right: 5px;
+            span:nth-child(1) {
+              display: inline-block;
+              width: 30px;        
+              &:before {
+                content: 'HP: ';
+                padding-left: 5px;
+              }
+            }
+            span:nth-child(2) {
+              display: inline-block;
+              padding: 0 calc(50% - 50px);
+              // width: calc( 100% - 50px );
+              border-radius: 10px;
+              border: 1px solid black;
+              background: red;
+              height: 15px;
+            }
+          }
+        }
+        .baby {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
       }
       .message {
+        margin-top: 10px;
+        border: 5px solid black;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        .left, .right {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          // border: 1px solid green;
+          .top, .down {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            // border: 1px solid green;
+          } 
+        }
+        .right {
+          margin: 5px;          
+          border: 1px solid black;
+          border-radius: 5px;
+        }
+        .action {
+          display: inline-block;
+          text-align: center;
+          width: 50%;
+          height: 98px;
+          line-height: 98px;
+          font-size: 28px;
+          // border: 1px solid red;
+        }
       }
     }
   }
