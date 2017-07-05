@@ -57,7 +57,7 @@ html {
               padding: 0 calc(50% - 50px);
               // width: calc( 100% - 50px );
               border-radius: 10px;
-              // border: 1px solid black;
+              border: 1px solid black;
               background: red;
               height: 15px;
             }
@@ -163,7 +163,25 @@ html {
           line-height: 98px;
           font-size: 28px;
           // border: 1px solid red;
+          .label {
+            cursor: pointer;
+            .pointer {
+              display: none;
+              border-color: transparent transparent transparent #000000;
+              border-style: solid solid solid solid;
+              border-width: 10px;
+              /* 設定 width、height 可更好理解原理 */
+              height: 0;
+              width: 0;
+            }
+            .order {
+              margin-left: -10px;
+            }
+          }
         }
+      }
+      .shock {
+        // transform: 
       }
     }
   }

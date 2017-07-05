@@ -8,6 +8,21 @@
   <title>Document</title>
 </head>
 <body>
+  <script>
+    window.onload = function(){
+      document.querySelectorAll('.label').forEach(function(e){
+          e.addEventListener("mouseover",function(t){
+            e.children[0].style.display = "inline-block";
+        });
+      });
+      document.querySelectorAll('.label').forEach(function(e){
+        e.addEventListener("mouseout",function(t){
+          e.children[0].style.display = "";
+        });
+      });
+    }
+    
+  </script>
   <div class="container">
     <div class="npc">
       <div class="left">
@@ -66,15 +81,32 @@
       <div class="right">
         <div class="top">
           <div class="action">
-            <span>戰鬥</span>
+            <div class="label">
+              <span class="pointer"></span>
+              <span class="order">戰鬥</span>
+            </div>
           </div>
-          <div class="action">狀態</div>
+          <div class="action">
+            <div class="label">
+              <span class="pointer"></span>
+              <span class="order">狀態</span>
+            </div>
+          </div>
         </div>
         <div class="down">
-          <div class="action">道具</div>
-          <div class="action">逃跑</div>
+          <div class="action">
+            <div class="label">
+              <span class="pointer"></span>
+              <span class="order">道具</span>
+            </div>
+          </div>
+          <div class="action">
+            <div class="label">
+              <span class="pointer"></span>
+              <span class="order">逃跑</span>
+            </div>
+          </div>
         </div>
-        
       </div>
     </div>
   </div>
