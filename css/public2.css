@@ -156,10 +156,10 @@ html body .container .message .action {
   line-height: 98px;
   font-size: 28px;
 }
-html body .container .message .action .labㄏ ㄏ ㄏel {
+html body .container .message .action .label {
   cursor: pointer;
 }
-html body .container .message .action .labㄏ ㄏ ㄏel .pointer {
+html body .container .message .action .label .pointer {
   display: none;
   border-color: transparent transparent transparent #000000;
   border-style: solid solid solid solid;
@@ -168,6 +168,6 @@ html body .container .message .action .labㄏ ㄏ ㄏel .pointer {
   height: 0;
   width: 0;
 }
-html body .container .message .action .labㄏ ㄏ ㄏel .order {
+html body .container .message .action .label .order {
   margin-left: -10px;
 }
