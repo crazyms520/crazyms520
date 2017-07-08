@@ -166,7 +166,8 @@ html {
           .label {
             cursor: pointer;
             .pointer {
-              display: none;
+              display: inline-block;
+              opacity:0.0;
               border-color: transparent transparent transparent #000000;
               border-style: solid solid solid solid;
               border-width: 10px;
