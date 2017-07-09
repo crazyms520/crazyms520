@@ -1,179 +1,80 @@
-@charset "UTF-8";
-html * {
-  border: 1px solid red;
-}
-html body {
-  width: 100%;
-  height: 100%;
-}
-html body .container {
-  width: 100%;
-  max-width: 600px;
-  max-height: 600px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-html body .container .npc, html body .container .me, html body .container .message {
-  display: inline-block;
-  width: 100%;
-  height: 200px;
-}
-html body .container .npc {
-  display: flex;
-  flex-direction: row;
-}
-html body .container .npc .left, html body .container .npc .right {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-html body .container .npc .left .top, html body .container .npc .left .down, html body .container .npc .right .top, html body .container .npc .right .down {
-  height: 100%;
-}
-html body .container .npc .blood {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-html body .container .npc .blood h4 {
-  width: calc(100% - 10px);
-  padding: 10px 5px 10px 10px;
-  margin: 0;
-  letter-spacing: 6px;
-}
-html body .container .npc .blood .blood_border {
-  display: inline-block;
-  position: relative;
-  margin-left: 10px;
-  padding-bottom: 5px;
-  width: 100%;
-  border-left: 5px solid black;
-  border-bottom: 5px solid black;
-  border-radius: 5px;
-}
-html body .container .npc .blood .blood_border:before {
-  content: " HP:";
-  padding-left: 10px;
-}
-html body .container .npc .blood .blood_border .hp {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 95%;
-  height: 70%;
-  border: 1px solid red;
-  border-radius: 10px;
-}
-html body .container .npc .baby {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-}
-html body .container .npc .baby img {
-  width: 100%;
-  height: 100%;
-}
-html body .container .me {
-  display: flex;
-  flex-direction: row;
-}
-html body .container .me .left, html body .container .me .right {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-html body .container .me .left .top, html body .container .me .left .down, html body .container .me .right .top, html body .container .me .right .down {
-  height: 100%;
-}
-html body .container .me .blood {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  text-align: right;
-}
-html body .container .me .blood h4 {
-  width: 100%;
-  padding: 10px 5px 10px 0;
-  margin: 0;
-  letter-spacing: 6px;
-}
-html body .container .me .blood div {
-  display: inline;
-  border-right: 5px solid black;
-  border-bottom: 5px solid black;
-  margin-right: 10px;
-  padding-right: 5px;
-}
-html body .container .me .blood div span:nth-child(1) {
-  display: inline-block;
-  width: 30px;
-}
-html body .container .me .blood div span:nth-child(1):before {
-  content: 'HP: ';
-  padding-left: 5px;
-}
-html body .container .me .blood div span:nth-child(2) {
-  display: inline-block;
-  padding: 0 calc(50% - 50px);
-  border-radius: 10px;
-  border: 1px solid black;
-  background: red;
-  height: 15px;
-}
-html body .container .me .baby {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-}
-html body .container .me .baby img {
-  width: 100%;
-  height: 100%;
-}
-html body .container .message {
-  margin-top: 10px;
-  border: 5px solid black;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-}
-html body .container .message .left, html body .container .message .right {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-html body .container .message .left .top, html body .container .message .left .down, html body .container .message .right .top, html body .container .message .right .down {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-}
-html body .container .message .right {
-  margin: 5px;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-html body .container .message .action {
-  display: inline-block;
-  text-align: center;
-  width: 50%;
-  height: 98px;
-  line-height: 98px;
-  font-size: 28px;
-}
-html body .container .message .action .label {
-  cursor: pointer;
-}
-html body .container .message .action .label .pointer {
-  display: inline-block;
-  opacity: 0.0;
-  border-color: transparent transparent transparent #000000;
-  border-style: solid solid solid solid;
-  border-width: 10px;
-  /* 設定 width、height 可更好理解原理 */
-  height: 0;
-  width: 0;
-}
-html body .container .message .action .label .order {
-  margin-left: -10px;
-}
+/*
+Error: Invalid CSS after "＆:child-nth(1).": expected class name, was "&:child-nth(4)"
+        on line 31 of /Users/crazyms/www/crazyms520/scss/public2.scss
+
+26:   .monster {
+27:     width: calc( 50% - #{$border});
+28:     height: calc( 70% - #{$border});
+29:     border: 1px solid red;
+30:   }
+31:   ＆:child-nth(1).&:child-nth(4) {
+32:     background-color: red;
+33:   }
+34: }
+35: 
+36: .menu {
+
+Backtrace:
+/Users/crazyms/www/crazyms520/scss/public2.scss:31
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/scss/static_parser.rb:190:in `class_selector'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/scss/static_parser.rb:158:in `simple_selector_sequence'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/scss/static_parser.rb:111:in `selector'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/scss/static_parser.rb:86:in `selector_comma_sequence'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:1115:in `expr!'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/scss/static_parser.rb:20:in `parse_selector'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:427:in `visit_rule'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/crazyms/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"＆:child-nth(1).\": expected class name, was \"&:child-nth(4)\"\A         on line 31 of /Users/crazyms/www/crazyms520/scss/public2.scss\A \A 26:   .monster {\A 27:     width: calc( 50% - #{$border});\A 28:     height: calc( 70% - #{$border});\A 29:     border: 1px solid red;\A 30:   }\A 31:   ＆:child-nth(1).&:child-nth(4) {\A 32:     background-color: red;\A 33:   }\A 34: }\A 35: \A 36: .menu {"; }

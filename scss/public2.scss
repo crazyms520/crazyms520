@@ -1,192 +1,40 @@
-html {
-  * {
+$border : 2px ;
+
+.container {
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.screen {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 200px);
+  > * {
+    float: left;
+    display: inline-block;
+    width: calc( 50% - #{$border});
+    height: calc( 50% - #{$border});
     border: 1px solid red;
   }
-  body {
-    width: 100%;
-    height: 100%;
-    .container {
-      width: 100%;
-      max-width: 600px;
-      max-height: 600px;
-      display: flex;
-      flex-direction: column ;
-      margin: 0 auto;
-      .npc, .me, .message {
-        display: inline-block;
-        width: 100%;
-        height: 200px; //要有東西才可以有框框 calc( 100% / 3px )
-        // border: 1px solid black;
-      }
-      .npc{
-        display: flex;
-        flex-direction: row;
-        .left, .right {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          // border: 1px solid green;
-          .top, .down {
-            height: 100%;
-            // border: 1px solid green;
-          }
-        }
-        .blood {
-          width: 100%;
-          height: 100%;
-          margin: 0;
-          h4 {
-            width: calc(100% - 10px);
-            padding: 10px 5px 10px 10px ;
-            margin: 0;
-            letter-spacing: 6px
-          }
-          .blood_border {
-            display: inline-block;
-            position: relative;
-            margin-left: 10px;
-            padding-bottom: 5px;
-            width: 100%;
-            border-left: 5px solid black;
-            border-bottom: 5px solid black;
-            border-radius: 5px;
-            &:before {
-                content:" HP:";
-                padding-left: 10px;
-            }
-            .hp {
-              display: inline-block;
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 95%;
-              height: 70%;
-              border: 1px solid red;
-              border-radius: 10px;
-            }
-          }
-        }
-        .baby {
-          display: inline-block;
-          width: 100%;
-          height: 100%;
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-      }
-      .me {
-        display: flex;
-        flex-direction: row;
-        .left, .right {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          // border: 1px solid green;
-          .top, .down {
-            height: 100%;
-            // border: 1px solid green;
-          } 
-        }
-        .blood {
-          width: 100%;
-          height: 100%;
-          margin: 0;
-          text-align: right;
-          h4 {
-            width: 100%;
-            padding: 10px 5px 10px 0 ;
-            margin: 0;
-            letter-spacing: 6px
-          }
-          div {
-            display: inline;
-            border-right: 5px solid black;
-            border-bottom: 5px solid black;
-            margin-right: 10px;
-            padding-right: 5px;
-            span:nth-child(1) {
-              display: inline-block;
-              width: 30px;        
-              &:before {
-                content: 'HP: ';
-                padding-left: 5px;
-              }
-            }
-            span:nth-child(2) {
-              display: inline-block;
-              padding: 0 calc(50% - 50px);
-              // width: calc( 100% - 50px );
-              border-radius: 10px;
-              border: 1px solid black;
-              background: red;
-              height: 15px;
-            }
-          }
-        }
-        .baby {
-          display: inline-block;
-          width: 100%;
-          height: 100%;
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-      }
-      .message {
-        margin-top: 10px;
-        border: 5px solid black;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: row;
-        .left, .right {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          // border: 1px solid green;
-          .top, .down {
-            display: flex;
-            flex-direction: row;
-            height: 100%;
-            // border: 1px solid green;
-          } 
-        }
-        .right {
-          margin: 5px;          
-          border: 1px solid black;
-          border-radius: 5px;
-        }
-        .action {
-          display: inline-block;
-          text-align: center;
-          width: 50%;
-          height: 98px;
-          line-height: 98px;
-          font-size: 28px;
-          // border: 1px solid red;
-          .label {
-            cursor: pointer;
-            .pointer {
-              display: inline-block;
-              opacity:0.0;
-              border-color: transparent transparent transparent #000000;
-              border-style: solid solid solid solid;
-              border-width: 10px;
-              /* 設定 width、height 可更好理解原理 */
-              height: 0;
-              width: 0;
-            }
-            .order {
-              margin-left: -10px;
-            }
-          }
-        }
-      }
-      .shock {
-        // transform: 
-      }
-    }
+  .blood {
+    width: calc( 50% - #{$border});
+    height: calc( 30% - #{$border});
+    border: 1px solid red;
   }
+  .monster {
+    width: calc( 50% - #{$border});
+    height: calc( 70% - #{$border});
+    border: 1px solid red;
+  }
+  ＆:child-nth(1).&:child-nth(4) {
+    background-color: red;
+  }
+}
+
+.menu {
+  width: calc(100% - #{$border});
+  height: 200px - 2px ;
+  border: 1px solid red;
 }
