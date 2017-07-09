@@ -10,32 +10,33 @@
 <body>
   <script>
     window.onload = function(){
-      document.querySelectorAll('.label').forEach(function(e){
-          e.addEventListener("mouseover",function(t){
-            e.children[0].style.opacity = "1.0";
-        });
-      });
-      document.querySelectorAll('.label').forEach(function(e){
-        e.addEventListener("mouseout",function(t){
-          e.children[0].style.opacity = "0.0";
-        });
+      document.querySelector('#fight').addEventListener('click',function(){
+        // alert(1);
+        document.querySelectorAll('.hp')[0].className += " addBlood";
       });
     }
-    
   </script>
   <div class="container">
     <div class="screen">
-      <div class="blood"></div>
+      <div class="blood">
+        <h3></h3>
+        <span></span>
+        <div class="hp"></div>
+      </div>
       <div class="monster"></div>
       <div class="monster"></div>
-      <div class="blood"></div>
+      <div class="blood">
+        <h3></h3>
+        <div class="hp"></div>
+      </div>
     </div>
     <div class="menu">
-      <div class="top">
-
-      </div>
-      <div class="bottom">
-
+      <div class="left"></div>
+      <div class="right">
+        <div id="fight" class="actions">戰鬥</div>
+        <div class="actions">狀態</div>
+        <div class="actions">道具</div>
+        <div class="actions">逃跑</div>
       </div>
     </div>
   </div>
