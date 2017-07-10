@@ -10,9 +10,19 @@
 <body>
   <script>
     window.onload = function(){
+      console.log();
+      
       document.querySelector('#fight').addEventListener('click',function(){
         // alert(1);
-        document.querySelectorAll('.hp')[0].className += " addBlood";
+        if(document.querySelectorAll('.hp')[0].className.indexOf('addBlood') === -1) {
+          document.querySelectorAll('.hp')[0].className += " addBlood";
+        } else {
+          document.querySelectorAll('.hp')[0].classList.remove("addBlood");
+        }
+
+        document.querySelector('.hp[data-npc-hp]').setAttribute('data-npc-hp',80);
+        document.querySelector('.hp[data-npc-hp]').style.right = "80%";
+        
       });
     }
   </script>
@@ -21,7 +31,7 @@
       <div class="blood">
         <h3></h3>
         <span></span>
-        <div class="hp"></div>
+        <div class="hp" data-npc-hp="100"></div>
       </div>
       <div class="monster"></div>
       <div class="monster"></div>
