@@ -9,6 +9,7 @@ var $ = require('gulp-load-plugins')();
 // var gulpIf = require('gulp-if);
 // var gulpIf = require('gulp-clean);
 // var imageMin = require('gulp-imagemin');
+// var ghPages = require('gulp-gh-pages');
 var sequence = require('gulp-sequence');
 var minimist       = require('minimist');
 var autoprefixer   = require('autoprefixer');
@@ -108,6 +109,11 @@ gulp.task('watch', function () {
     gulp.watch('./source/**/*.js', ['babel']);
 });
 
+gulp.task('deploy', function() {
+  return gulp.src('./public/**/*')
+    .pipe($.ghPages())
+});
+
 gulp.task('build', sequence('clean', 'jade', 'sass', 'babel', 'vendorsJs'));
 
-gulp.task('default',['jade', 'sass', 'babel', 'vendorsJs', 'image-min, 'browser-sync', 'watch'])
+gulp.task('default',['jade', 'sass', 'babel', 'vendorsJs', 'image-min', 'browser-sync', 'watch'])
