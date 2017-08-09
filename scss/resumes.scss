@@ -1,0 +1,159 @@
+html {
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background-color: rgba(231, 225, 225, 1.00);
+        .container {
+            margin: 0 auto;
+            max-width: 980px;
+            height: 100%;
+            header {
+                position: relative;
+                width: 100%;
+                height: 150px;
+                margin: 0 auto;
+                .header-left {
+                    position: absolute;
+                    bottom: 0;
+                    width: 265px;
+                    h1,h2 {
+                        margin: 0;
+                    }
+                    h1 {
+                        font-size: 55px;
+                    }
+                }
+                .header-right {
+                    position: absolute;
+                    bottom: 0;
+                    left: 265px;
+                    width: calc(100% - 265px);
+                    a {
+                        padding: 0 10px;
+                        text-decoration: none;
+                        color: rgba(128, 128, 128, 1.00);
+                        font-family: 'Noto Sans Kannada', sans-serif;
+                        font-weight: bolder;
+
+                        &:hover {
+                            color: rgba(86, 201, 206, 1.00);
+                        }
+                    }
+                }            
+            }
+            section {
+                width: 100%;
+                height: calc(100% - 360px);
+                display: flex;
+                overflow: hidden;
+                .image,.info {
+                    width: 50%;
+                    // border: 1px solid red;
+                }
+                .info {
+                    .about {
+                        padding-top : 60px;
+                        span:first-child{
+                            font-size: 60px;                                                        
+                        }
+                    }
+                    .circle {
+                        margin: 20px 0;
+                        width: 100%;
+                        a {
+                            margin: 0 5px;
+                            display: inline-block;
+                            width: 150px;
+                            height: 150px;
+                            color: rgba(250, 252, 255, 1.00);
+                            border-radius: 50%;
+                            text-decoration: none;
+                            background-color: red;
+                            &:nth-child(1) {
+                                background-color: rgba(229, 50, 77, 1.00);
+                            }
+                            &:nth-child(1):hover {
+                                background-color: rgba(145, 35, 50, 1.00);
+                            }
+                            &:nth-child(2) {
+                                background-color: rgba(86, 201, 206, 1.00);
+                            }
+                            &:nth-child(2):hover {
+                                background-color: rgba(57, 128, 130, 1.00);
+                                
+                            }
+                            &:nth-child(3) {
+                                background-color: rgba(203, 191, 0, 1.00);
+                            }
+                            &:nth-child(3):hover {
+                                background-color: rgba(129, 122, 0, 1.00);
+                            }
+                            span {
+                                display: inline-block;
+                                text-align: center;
+                                width: 100%;
+                                height: 100%;
+                                line-height: 150px;
+                            }   
+                        }
+                    }
+                    .words {
+                        line-height: 30px;
+                        font-size: 18px;
+                    }
+                }
+            }
+            footer {
+                position: absolute;    
+                bottom: 60px;
+                left: 0;
+                right: 0;    
+                height: 150px;
+                background-color: rgba(229, 50, 77, 1.00);
+                .footer {
+                    margin: 0 auto;
+                    max-width: 980px; 
+                    height: 100%;
+                    // line-height: 150px;
+                    div {
+                        display: inline-block;
+                        width: calc( 100% / 3 - 10px);
+                        height: 100%;
+                        overflow: hidden;
+                        .icon {
+                            margin: 50px;
+                            display: inline-block;
+                            width: 50px;
+                            height: 50px;
+                            line-height: 100%;
+                            border-radius: 50%;
+                            background-color: rgba(86, 201, 206, 1.00);
+                            i {
+                                padding-top: 5px;
+                                display: inline-block;
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+                                color: rgba(226, 47, 68, 1.00);
+                            }
+                        }
+                        p {
+                            display: inline-block;
+                            margin: 0;
+                            margin-left: 10px;
+                            width: calc(100% - 100px);
+                            height: 30px;
+                            text-align: center;
+                        }
+                        &:nth-child(2) {
+                                margin: 0 5px;                                
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}

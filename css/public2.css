@@ -1,516 +1,639 @@
 @charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 /* The animation code */
+@-webkit-keyframes blood {
+  0% {
+    right: 0%; }
+  1% {
+    right: 1%; }
+  2% {
+    right: 2%; }
+  3% {
+    right: 3%; }
+  4% {
+    right: 4%; }
+  5% {
+    right: 5%; }
+  6% {
+    right: 6%; }
+  7% {
+    right: 7%; }
+  8% {
+    right: 8%; }
+  9% {
+    right: 9%; }
+  10% {
+    right: 10%; }
+  11% {
+    right: 11%; }
+  12% {
+    right: 12%; }
+  13% {
+    right: 13%; }
+  14% {
+    right: 14%; }
+  15% {
+    right: 15%; }
+  16% {
+    right: 16%; }
+  17% {
+    right: 17%; }
+  18% {
+    right: 18%; }
+  19% {
+    right: 19%; }
+  20% {
+    right: 20%; }
+  21% {
+    right: 21%; }
+  22% {
+    right: 22%; }
+  23% {
+    right: 23%; }
+  24% {
+    right: 24%; }
+  25% {
+    right: 25%; }
+  26% {
+    right: 26%; }
+  27% {
+    right: 27%; }
+  28% {
+    right: 28%; }
+  29% {
+    right: 29%; }
+  30% {
+    right: 30%; }
+  31% {
+    right: 31%; }
+  32% {
+    right: 32%; }
+  33% {
+    right: 33%; }
+  34% {
+    right: 34%; }
+  35% {
+    right: 35%; }
+  36% {
+    right: 36%; }
+  37% {
+    right: 37%; }
+  38% {
+    right: 38%; }
+  39% {
+    right: 39%; }
+  40% {
+    right: 40%; }
+  41% {
+    right: 41%; }
+  42% {
+    right: 42%; }
+  43% {
+    right: 43%; }
+  44% {
+    right: 44%; }
+  45% {
+    right: 45%; }
+  46% {
+    right: 46%; }
+  47% {
+    right: 47%; }
+  48% {
+    right: 48%; }
+  49% {
+    right: 49%; }
+  50% {
+    right: 50%; }
+  51% {
+    right: 51%; }
+  52% {
+    right: 52%; }
+  53% {
+    right: 53%; }
+  54% {
+    right: 54%; }
+  55% {
+    right: 55%; }
+  56% {
+    right: 56%; }
+  57% {
+    right: 57%; }
+  58% {
+    right: 58%; }
+  59% {
+    right: 59%; }
+  60% {
+    right: 60%; }
+  61% {
+    right: 61%; }
+  62% {
+    right: 62%; }
+  63% {
+    right: 63%; }
+  64% {
+    right: 64%; }
+  65% {
+    right: 65%; }
+  66% {
+    right: 66%; }
+  67% {
+    right: 67%; }
+  68% {
+    right: 68%; }
+  69% {
+    right: 69%; }
+  70% {
+    right: 70%; }
+  71% {
+    right: 71%; }
+  72% {
+    right: 72%; }
+  73% {
+    right: 73%; }
+  74% {
+    right: 74%; }
+  75% {
+    right: 75%; }
+  76% {
+    right: 76%; }
+  77% {
+    right: 77%; }
+  78% {
+    right: 78%; }
+  79% {
+    right: 79%; }
+  80% {
+    right: 80%; }
+  81% {
+    right: 81%; }
+  82% {
+    right: 82%; }
+  83% {
+    right: 83%; }
+  84% {
+    right: 84%; }
+  85% {
+    right: 85%; }
+  86% {
+    right: 86%; }
+  87% {
+    right: 87%; }
+  88% {
+    right: 88%; }
+  89% {
+    right: 89%; }
+  90% {
+    right: 90%; }
+  91% {
+    right: 91%; }
+  92% {
+    right: 92%; }
+  93% {
+    right: 93%; }
+  94% {
+    right: 94%; }
+  95% {
+    right: 95%; }
+  96% {
+    right: 96%; }
+  97% {
+    right: 97%; }
+  98% {
+    right: 98%; }
+  99% {
+    right: 99%; }
+  100% {
+    right: 100%; } }
 @keyframes blood {
   0% {
-    right: 0%;
-  }
+    right: 0%; }
   1% {
-    right: 1%;
-  }
+    right: 1%; }
   2% {
-    right: 2%;
-  }
+    right: 2%; }
   3% {
-    right: 3%;
-  }
+    right: 3%; }
   4% {
-    right: 4%;
-  }
+    right: 4%; }
   5% {
-    right: 5%;
-  }
+    right: 5%; }
   6% {
-    right: 6%;
-  }
+    right: 6%; }
   7% {
-    right: 7%;
-  }
+    right: 7%; }
   8% {
-    right: 8%;
-  }
+    right: 8%; }
   9% {
-    right: 9%;
-  }
+    right: 9%; }
   10% {
-    right: 10%;
-  }
+    right: 10%; }
   11% {
-    right: 11%;
-  }
+    right: 11%; }
   12% {
-    right: 12%;
-  }
+    right: 12%; }
   13% {
-    right: 13%;
-  }
+    right: 13%; }
   14% {
-    right: 14%;
-  }
+    right: 14%; }
   15% {
-    right: 15%;
-  }
+    right: 15%; }
   16% {
-    right: 16%;
-  }
+    right: 16%; }
   17% {
-    right: 17%;
-  }
+    right: 17%; }
   18% {
-    right: 18%;
-  }
+    right: 18%; }
   19% {
-    right: 19%;
-  }
+    right: 19%; }
   20% {
-    right: 20%;
-  }
+    right: 20%; }
   21% {
-    right: 21%;
-  }
+    right: 21%; }
   22% {
-    right: 22%;
-  }
+    right: 22%; }
   23% {
-    right: 23%;
-  }
+    right: 23%; }
   24% {
-    right: 24%;
-  }
+    right: 24%; }
   25% {
-    right: 25%;
-  }
+    right: 25%; }
   26% {
-    right: 26%;
-  }
+    right: 26%; }
   27% {
-    right: 27%;
-  }
+    right: 27%; }
   28% {
-    right: 28%;
-  }
+    right: 28%; }
   29% {
-    right: 29%;
-  }
+    right: 29%; }
   30% {
-    right: 30%;
-  }
+    right: 30%; }
   31% {
-    right: 31%;
-  }
+    right: 31%; }
   32% {
-    right: 32%;
-  }
+    right: 32%; }
   33% {
-    right: 33%;
-  }
+    right: 33%; }
   34% {
-    right: 34%;
-  }
+    right: 34%; }
   35% {
-    right: 35%;
-  }
+    right: 35%; }
   36% {
-    right: 36%;
-  }
+    right: 36%; }
   37% {
-    right: 37%;
-  }
+    right: 37%; }
   38% {
-    right: 38%;
-  }
+    right: 38%; }
   39% {
-    right: 39%;
-  }
+    right: 39%; }
   40% {
-    right: 40%;
-  }
+    right: 40%; }
   41% {
-    right: 41%;
-  }
+    right: 41%; }
   42% {
-    right: 42%;
-  }
+    right: 42%; }
   43% {
-    right: 43%;
-  }
+    right: 43%; }
   44% {
-    right: 44%;
-  }
+    right: 44%; }
   45% {
-    right: 45%;
-  }
+    right: 45%; }
   46% {
-    right: 46%;
-  }
+    right: 46%; }
   47% {
-    right: 47%;
-  }
+    right: 47%; }
   48% {
-    right: 48%;
-  }
+    right: 48%; }
   49% {
-    right: 49%;
-  }
+    right: 49%; }
   50% {
-    right: 50%;
-  }
+    right: 50%; }
   51% {
-    right: 51%;
-  }
+    right: 51%; }
   52% {
-    right: 52%;
-  }
+    right: 52%; }
   53% {
-    right: 53%;
-  }
+    right: 53%; }
   54% {
-    right: 54%;
-  }
+    right: 54%; }
   55% {
-    right: 55%;
-  }
+    right: 55%; }
   56% {
-    right: 56%;
-  }
+    right: 56%; }
   57% {
-    right: 57%;
-  }
+    right: 57%; }
   58% {
-    right: 58%;
-  }
+    right: 58%; }
   59% {
-    right: 59%;
-  }
+    right: 59%; }
   60% {
-    right: 60%;
-  }
+    right: 60%; }
   61% {
-    right: 61%;
-  }
+    right: 61%; }
   62% {
-    right: 62%;
-  }
+    right: 62%; }
   63% {
-    right: 63%;
-  }
+    right: 63%; }
   64% {
-    right: 64%;
-  }
+    right: 64%; }
   65% {
-    right: 65%;
-  }
+    right: 65%; }
   66% {
-    right: 66%;
-  }
+    right: 66%; }
   67% {
-    right: 67%;
-  }
+    right: 67%; }
   68% {
-    right: 68%;
-  }
+    right: 68%; }
   69% {
-    right: 69%;
-  }
+    right: 69%; }
   70% {
-    right: 70%;
-  }
+    right: 70%; }
   71% {
-    right: 71%;
-  }
+    right: 71%; }
   72% {
-    right: 72%;
-  }
+    right: 72%; }
   73% {
-    right: 73%;
-  }
+    right: 73%; }
   74% {
-    right: 74%;
-  }
+    right: 74%; }
   75% {
-    right: 75%;
-  }
+    right: 75%; }
   76% {
-    right: 76%;
-  }
+    right: 76%; }
   77% {
-    right: 77%;
-  }
+    right: 77%; }
   78% {
-    right: 78%;
-  }
+    right: 78%; }
   79% {
-    right: 79%;
-  }
+    right: 79%; }
   80% {
-    right: 80%;
-  }
+    right: 80%; }
   81% {
-    right: 81%;
-  }
+    right: 81%; }
   82% {
-    right: 82%;
-  }
+    right: 82%; }
   83% {
-    right: 83%;
-  }
+    right: 83%; }
   84% {
-    right: 84%;
-  }
+    right: 84%; }
   85% {
-    right: 85%;
-  }
+    right: 85%; }
   86% {
-    right: 86%;
-  }
+    right: 86%; }
   87% {
-    right: 87%;
-  }
+    right: 87%; }
   88% {
-    right: 88%;
-  }
+    right: 88%; }
   89% {
-    right: 89%;
-  }
+    right: 89%; }
   90% {
-    right: 90%;
-  }
+    right: 90%; }
   91% {
-    right: 91%;
-  }
+    right: 91%; }
   92% {
-    right: 92%;
-  }
+    right: 92%; }
   93% {
-    right: 93%;
-  }
+    right: 93%; }
   94% {
-    right: 94%;
-  }
+    right: 94%; }
   95% {
-    right: 95%;
-  }
+    right: 95%; }
   96% {
-    right: 96%;
-  }
+    right: 96%; }
   97% {
-    right: 97%;
-  }
+    right: 97%; }
   98% {
-    right: 98%;
-  }
+    right: 98%; }
   99% {
-    right: 99%;
-  }
+    right: 99%; }
   100% {
-    right: 100%;
-  }
-}
+    right: 100%; } }
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0.0; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1.0; } }
+
 @keyframes show {
   0% {
-    opacity: 0.0;
-  }
+    opacity: 0.0; }
   50% {
-    opacity: 0.0;
-  }
+    opacity: 0.0; }
   100% {
-    opacity: 1.0;
-  }
-}
+    opacity: 1.0; } }
+
+@-webkit-keyframes uToD {
+  0% {
+    top: -100px;
+    opacity: 0.0; }
+  50% {
+    top: -100px;
+    opacity: 0.0; }
+  100% {
+    top: 0;
+    opacity: 1.0; } }
+
 @keyframes uToD {
   0% {
     top: -100px;
-    opacity: 0.0;
-  }
+    opacity: 0.0; }
   50% {
     top: -100px;
-    opacity: 0.0;
-  }
+    opacity: 0.0; }
   100% {
     top: 0;
-    opacity: 1.0;
-  }
-}
+    opacity: 1.0; } }
+
+@-webkit-keyframes dToU {
+  0% {
+    bottom: -100px;
+    opacity: 0.0; }
+  50% {
+    bottom: -100px;
+    opacity: 0.0; }
+  100% {
+    bottom: 0;
+    opacity: 1.0; } }
+
 @keyframes dToU {
   0% {
     bottom: -100px;
-    opacity: 0.0;
-  }
+    opacity: 0.0; }
   50% {
     bottom: -100px;
-    opacity: 0.0;
-  }
+    opacity: 0.0; }
   100% {
     bottom: 0;
-    opacity: 1.0;
-  }
-}
+    opacity: 1.0; } }
+
+@-webkit-keyframes lToR {
+  0% {
+    left: -100px;
+    opacity: 0.0; }
+  50% {
+    left: -100px;
+    opacity: 0.0; }
+  100% {
+    left: 0;
+    opacity: 1.0; } }
+
 @keyframes lToR {
   0% {
     left: -100px;
-    opacity: 0.0;
-  }
+    opacity: 0.0; }
   50% {
     left: -100px;
-    opacity: 0.0;
-  }
+    opacity: 0.0; }
   100% {
     left: 0;
-    opacity: 1.0;
-  }
-}
+    opacity: 1.0; } }
+
+@-webkit-keyframes rToL {
+  0% {
+    right: -100px;
+    opacity: 0.0; }
+  50% {
+    right: -100px;
+    opacity: 0.0; }
+  100% {
+    right: 0;
+    opacity: 1.0; } }
+
 @keyframes rToL {
   0% {
     right: -100px;
-    opacity: 0.0;
-  }
+    opacity: 0.0; }
   50% {
     right: -100px;
-    opacity: 0.0;
-  }
+    opacity: 0.0; }
   100% {
     right: 0;
-    opacity: 1.0;
-  }
-}
+    opacity: 1.0; } }
+
 /* The animation code */
 /* var */
 /* var */
 .container {
   max-width: 600px;
   height: 500px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .addBlood {
-  animation: blood 3s;
-}
+  -webkit-animation: blood 3s;
+          animation: blood 3s; }
 
 .screen {
   position: relative;
   width: 100%;
-  height: calc(100% - 200px);
-}
-.screen > * {
-  display: inline-block;
-  width: calc( 50%);
-  height: calc( 50%);
-  border: 1px solid red;
-}
-.screen .blood {
-  width: calc( 50%);
-  height: calc( 30%);
-  background: yellow;
-}
-.screen .blood h3 {
-  width: 100%;
-  height: 30px;
-  margin: 0;
-}
-.screen .blood span:before {
-  content: "HP:";
-}
-.screen .blood .hp {
-  position: absolute;
-  top: 35px;
-  right: 0;
-  left: 30px;
-  height: calc(100% - 30px);
-  background: red;
-  height: 15px;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-.screen .blood:nth-child(1) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: uToD 2s;
-  overflow: hidden;
-}
-.screen .blood:nth-child(4) {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  animation: dToU 2s;
-  overflow: hidden;
-}
-.screen .monster {
-  width: calc( 50%);
-  height: calc( 70%);
-  background: blue;
-}
-.screen .monster:nth-child(2) {
-  position: absolute;
-  top: 0;
-  right: 0;
-  animation: rToL 1s;
-}
-.screen .monster:nth-child(3) {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  animation: lToR 1s;
-}
+  height: calc(100% - 200px); }
+  .screen > * {
+    display: inline-block;
+    width: calc( 50%);
+    height: calc( 50%);
+    border: 1px solid red; }
+  .screen .blood {
+    width: calc( 50%);
+    height: calc( 30%);
+    background: yellow; }
+    .screen .blood h3 {
+      width: 100%;
+      height: 30px;
+      margin: 0; }
+    .screen .blood span:before {
+      content: "HP:"; }
+    .screen .blood .hp {
+      position: absolute;
+      top: 35px;
+      right: 0;
+      left: 30px;
+      height: calc(100% - 30px);
+      background: red;
+      height: 15px;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .screen .blood:nth-child(1) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-animation: uToD 2s;
+              animation: uToD 2s;
+      overflow: hidden; }
+    .screen .blood:nth-child(4) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      -webkit-animation: dToU 2s;
+              animation: dToU 2s;
+      overflow: hidden; }
+  .screen .monster {
+    width: calc( 50%);
+    height: calc( 70%);
+    background: blue; }
+    .screen .monster:nth-child(2) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      -webkit-animation: rToL 1s;
+              animation: rToL 1s; }
+    .screen .monster:nth-child(3) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      -webkit-animation: lToR 1s;
+              animation: lToR 1s; }
 
 .menu {
-  animation: show 3s;
+  -webkit-animation: show 3s;
+          animation: show 3s;
   width: calc(100%);
   height: calc(200px);
   border: 2px solid black;
   padding: 2px;
-  border-radius: 5px;
-}
-.menu > * {
-  float: left;
-  display: inline-block;
-  width: calc(50%);
-  height: calc(100%);
-}
-.menu .right .actions {
-  display: inline-block;
-  float: left;
-  padding-right: 10px;
-  width: calc(50%);
-  height: calc(50%);
-  line-height: 100px;
-  text-align: center;
-  font-size: 30px;
-  border-radius: 5px;
-}
-.menu .right .actions:before {
-  content: '';
-  display: inline-block;
-  opacity: 0.0;
-  margin: 0;
-  border-color: transparent transparent transparent #000000;
-  border-style: solid solid solid solid;
-  border-width: 10px;
-  /* 設定 width、height 可更好理解原理 */
-  height: 0;
-  width: 0;
-}
-.menu .right .actions:hover:before {
-  opacity: 1.0;
-}
-.menu .right .actions:nth-child(1) {
-  border-top: 2px solid black;
-  border-left: 2px solid black;
-}
-.menu .right .actions:nth-child(2) {
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-}
-.menu .right .actions:nth-child(3) {
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-}
-.menu .right .actions:nth-child(4) {
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
-}
+  border-radius: 5px; }
+  .menu > * {
+    float: left;
+    display: inline-block;
+    width: calc(50%);
+    height: calc(100%); }
+  .menu .right .actions {
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+    width: calc(50%);
+    height: calc(50%);
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 5px; }
+    .menu .right .actions:before {
+      content: '';
+      display: inline-block;
+      opacity: 0.0;
+      margin: 0;
+      border-color: transparent transparent transparent #000000;
+      border-style: solid solid solid solid;
+      border-width: 10px;
+      /* 設定 width、height 可更好理解原理 */
+      height: 0;
+      width: 0; }
+    .menu .right .actions:hover:before {
+      opacity: 1.0; }
+    .menu .right .actions:nth-child(1) {
+      border-top: 2px solid black;
+      border-left: 2px solid black; }
+    .menu .right .actions:nth-child(2) {
+      border-top: 2px solid black;
+      border-right: 2px solid black; }
+    .menu .right .actions:nth-child(3) {
+      border-bottom: 2px solid black;
+      border-left: 2px solid black; }
+    .menu .right .actions:nth-child(4) {
+      border-bottom: 2px solid black;
+      border-right: 2px solid black; }
+
+/*# sourceMappingURL=public2.css.map */
