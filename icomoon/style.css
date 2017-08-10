@@ -37,3 +37,14 @@
   content: "\e958";
   font-size: 40px;  
 }
+.icon-bars:before {
+  content: "\e900";
+}
+.icon-mail2:before {
+  content: "\ea84";
+  font-size: 40px;
+}
+.icon-copyright:before {
+  content: "\e901";
+  font-size: 40px;  
+}
