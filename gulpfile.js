@@ -51,12 +51,12 @@ gulp.task('sass', function () {
 });
 
 gulp.task('babel', () => {
-    return gulp.src('./js/**/*.js')
+    return gulp.src('./js/es6/*.js')
         .pipe($.sourcemaps.init())
         .pipe($.babel({
             presets: ['es2015']
         }))
-        .pipe($.concat('all.js'))
+        // .pipe($.concat('all.js'))
         .pipe($.if(options.env === 'production', $.uglify({
             compress: {
                 drop_console : true
