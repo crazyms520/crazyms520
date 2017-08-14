@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?g3mmjm');
-  src:  url('fonts/icomoon.eot?g3mmjm#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?g3mmjm') format('truetype'),
-    url('fonts/icomoon.woff?g3mmjm') format('woff'),
-    url('fonts/icomoon.svg?g3mmjm#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ozytdb');
+  src:  url('fonts/icomoon.eot?ozytdb#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ozytdb') format('truetype'),
+    url('fonts/icomoon.woff?ozytdb') format('woff'),
+    url('fonts/icomoon.svg?ozytdb#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,27 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-creative-commons:before {
-  content: "\e900";
-  font-size: 40px;
-  
-}
-.icon-envelop:before {
-  content: "\e945";
-  font-size: 40px;
-}
-.icon-mobile:before {
-  content: "\e958";
-  font-size: 40px;  
+.icon-copyright:before {
+  content: "\e901";
 }
 .icon-bars:before {
   content: "\e900";
 }
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-notification:before {
+  content: "\ea08";
+}
 .icon-mail2:before {
   content: "\ea84";
-  font-size: 40px;
-}
-.icon-copyright:before {
-  content: "\e901";
-  font-size: 40px;  
 }
