@@ -76,7 +76,7 @@ gulp.task('image-min', function() {
 
 gulp.task('watch', function () {
     gulp.watch('./scss/**/*.scss', ['sass']);
-    gulp.watch('./js/**/*.js', ['babel']);
+    gulp.watch('./js/es6/*.js', ['babel']);
 });
 
 gulp.task('deploy', function() {
