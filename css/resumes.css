@@ -150,6 +150,93 @@ html {
             margin: 0;
             font-size: 30px;
             border-bottom: 1px solid #8b8b8b; }
+    html body .container div.projects {
+      max-width: 980px;
+      margin: 0 auto;
+      height: 100%;
+      overflow: hidden;
+      display: none;
+      padding: 20px; }
+      html body .container div.projects h2 {
+        display: block;
+        border-bottom: 1px solid #8b8b8b;
+        padding: 40px 0 60px 0;
+        margin: 0;
+        font-size: 60px; }
+      html body .container div.projects .content .article {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 20px 0;
+        border-bottom: 1px solid #8b8b8b; }
+        html body .container div.projects .content .article .left {
+          -webkit-box-flex: 3;
+              -ms-flex: 3;
+                  flex: 3;
+          position: relative;
+          display: inline-block;
+          margin: auto;
+          text-align: center;
+          width: 100%;
+          height: 100%; }
+          html body .container div.projects .content .article .left .lt, html body .container div.projects .content .article .left .gt {
+            position: absolute;
+            top: 0;
+            display: inline-block;
+            height: 200px;
+            padding-top: calc(350px / 2 - 25px);
+            width: calc((100% - 350px) / 2);
+            margin: auto;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            cursor: pointer; }
+          html body .container div.projects .content .article .left .lt {
+            left: 0; }
+          html body .container div.projects .content .article .left .gt {
+            right: 0; }
+          html body .container div.projects .content .article .left .image {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin: 0 auto;
+            overflow: hidden;
+            width: 350px;
+            height: 350px; }
+            html body .container div.projects .content .article .left .image img {
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: row;
+                      flex-direction: row; }
+        html body .container div.projects .content .article .right {
+          -webkit-box-flex: 3;
+              -ms-flex: 3;
+                  flex: 3; }
+          html body .container div.projects .content .article .right .circle {
+            display: inline-block;
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1;
+            padding-bottom: 20px;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #8b8b8b; }
+            html body .container div.projects .content .article .right .circle span {
+              display: inline-block;
+              margin: 0 auto;
+              width: 120px;
+              height: 120px;
+              line-height: 120px;
+              text-align: center;
+              text-decoration: none;
+              border-radius: 50%;
+              color: #fafcff;
+              background-color: #61d0d4; }
+          html body .container div.projects .content .article .right h3 {
+            margin: 0;
+            padding: 20px 0;
+            text-align: center; }
     html body .container footer {
       position: relative;
       bottom: 0;
