@@ -335,15 +335,18 @@ html {
               border-radius: 5px;
               background-color: #444444;
               color: white; }
-            html body .container header .header-right div {
+            html body .container header .header-right .bars {
               position: absolute;
-              display: none;
+              opacity: 0;
               left: -235px;
               width: 280px;
               z-index: 10;
               text-align: center;
-              background-color: #555555; }
-              html body .container header .header-right div a {
+              background-color: #555555;
+              -webkit-transition: all 1s;
+              -o-transition: all 1s;
+              transition: all 1s; }
+              html body .container header .header-right .bars a {
                 display: block;
                 padding: 10px;
                 text-decoration: none;

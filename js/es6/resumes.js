@@ -1,13 +1,12 @@
 const list       = ['home', 'resumes', 'projects'];
 const clist      = ['cresumes', 'cprojects', 'skills'];
-let   changePage = (Name) => {
+let changePage = (Name) => {
     let name = document.querySelector('.'+Name);
     for (let i = 0; i < list.length; i++) {
         document.querySelector('.'+list[i]).style.display = 'none';
         if(window.innerWidth < 400) {
             document.querySelector('#'+list[i]).style.color = 'white';
         } else {
-            console.log(window.innerWidth)
             document.querySelector('#'+list[i]).style.color = 'rgba(128, 128, 128, 1.00)';
         }
     }
@@ -16,13 +15,23 @@ let   changePage = (Name) => {
 } 
 
 window.onload = () => {
+    changePage('projects');
     document.querySelector('.icon-bars').addEventListener('click', () => {
         let mbars = document.querySelector('.bars');
-        if(mbars.style.display == '' || mbars.style.display == 'none') {
-            mbars.style.display = 'inline-block';            
+        if(mbars.style.opacity == "0" || mbars.style.opacity == "" ) {
+            mbars.classList.add('fadein');
+            mbars.style.opacity = "1";
         } else {
-            mbars.style.display = 'none';            
+            mbars.classList.add('fadeout');  
+            mbars.style.opacity = "0";
         }
+    });
+    
+    Object.keys(document.querySelectorAll('.lt')).map(function(element){
+        document.querySelectorAll('.lt')[element].addEventListener('click', (event) => {
+            let parent = event.target.parentElement.parentElement;
+            parent.children[0].children[1].children[0].src = "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97300&w=300&h=300"
+        });
     });
 
     for (let i = 0; i < list.length; i++) {
