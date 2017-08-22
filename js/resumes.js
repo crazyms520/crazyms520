@@ -20,13 +20,16 @@ window.onload = function () {
     changePage('projects');
     document.querySelector('.icon-bars').addEventListener('click', function () {
         var mbars = document.querySelector('.bars');
+        mbars.style.display = "inline-block";
         if (mbars.style.opacity == "0" || mbars.style.opacity == "") {
             mbars.classList.add('fadein');
+            mbars.classList.remove('fadeout');
             mbars.style.opacity = "1";
         } else {
             mbars.classList.add('fadeout');
-            mbars.style.opacity = "0";
+            mbars.classList.remove('fadein');
         }
+        console.log(mbars.style.opacity);
     });
 
     Object.keys(document.querySelectorAll('.lt')).map(function (element) {
@@ -40,6 +43,7 @@ window.onload = function () {
         document.querySelector('#' + list[i]).addEventListener('click', function () {
             if (window.innerWidth < 400) {
                 document.querySelector('.bars').style.display = 'none';
+                document.querySelector('.bars').style.opacity = "0";
             }
             changePage(this.id);
         }, false);
