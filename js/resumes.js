@@ -2,6 +2,8 @@
 
 var list = ['home', 'resumes', 'projects'];
 var clist = ['cresumes', 'cprojects', 'skills'];
+var counter = 1;
+
 var changePage = function changePage(Name) {
     var name = document.querySelector('.' + Name);
     for (var i = 0; i < list.length; i++) {
@@ -15,8 +17,27 @@ var changePage = function changePage(Name) {
     name.style.display = 'block';
     document.querySelector('#' + Name).style.color = 'rgba(86, 201, 206, 1.00)';
 };
+var showImg = function showImg(event, direction) {
+    var parent = event.target.parentElement.parentElement,
+        items = parent.children[0].children[1].childElementCount;
+    console.log(items);
+    if (direction == 'lt') {
+        counter--;
+        if (counter == 0) {
+            counter = items;
+        }
+    } else {
+        counter++;
+        if (counter == ++items) {
+            counter = 1;
+        }
+    }
+    console.log(counter);
+    parent.children[0].children[1].children[0].src = 'images/0' + counter + '.jpeg';
+};
 
 window.onload = function () {
+    var a = document.querySelector('#project1');
     changePage('projects');
     document.querySelector('.icon-bars').addEventListener('click', function () {
         var mbars = document.querySelector('.bars');
@@ -34,8 +55,13 @@ window.onload = function () {
 
     Object.keys(document.querySelectorAll('.lt')).map(function (element) {
         document.querySelectorAll('.lt')[element].addEventListener('click', function (event) {
-            var parent = event.target.parentElement.parentElement;
-            parent.children[0].children[1].children[0].src = "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97300&w=300&h=300";
+            showImg(event, 'lt');
+        });
+    });
+
+    Object.keys(document.querySelectorAll('.gt')).map(function (element) {
+        document.querySelectorAll('.gt')[element].addEventListener('click', function (event) {
+            showImg(event, 'gt');
         });
     });
 

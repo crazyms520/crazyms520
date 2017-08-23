@@ -1,5 +1,7 @@
 const list       = ['home', 'resumes', 'projects'];
 const clist      = ['cresumes', 'cprojects', 'skills'];
+let counter = 1;
+
 let changePage = (Name) => {
     let name = document.querySelector('.'+Name);
     for (let i = 0; i < list.length; i++) {
@@ -12,9 +14,28 @@ let changePage = (Name) => {
     }
     name.style.display = 'block';
     document.querySelector('#'+Name).style.color = 'rgba(86, 201, 206, 1.00)';
-} 
+}
+let showImg = (event,direction) => {
+    let parent  = event.target.parentElement.parentElement,
+        items   = parent.children[0].children[1].childElementCount;
+        console.log(items);
+        if(direction == 'lt') {
+            counter--;  
+            if(counter == 0) {
+                counter = items;    
+            }
+        } else {
+            counter++;   
+            if(counter == (++items)) {
+                counter = 1
+            }         
+        }
+    console.log(counter);
+    parent.children[0].children[1].children[0].src = `images/0${counter}.jpeg`;
+}
 
 window.onload = () => {
+    let a = document.querySelector('#project1');
     changePage('projects');
     document.querySelector('.icon-bars').addEventListener('click', () => {
         let mbars = document.querySelector('.bars');
@@ -28,12 +49,17 @@ window.onload = () => {
             mbars.classList.remove('fadein');
         }
         console.log(mbars.style.opacity);
-    });
-    
+    });    
+
     Object.keys(document.querySelectorAll('.lt')).map(function(element){
         document.querySelectorAll('.lt')[element].addEventListener('click', (event) => {
-            let parent = event.target.parentElement.parentElement;
-            parent.children[0].children[1].children[0].src = "https://placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97300&w=300&h=300"
+            showImg(event,'lt');
+        });
+    });
+
+    Object.keys(document.querySelectorAll('.gt')).map(function(element){
+        document.querySelectorAll('.gt')[element].addEventListener('click', (event) => {
+            showImg(event,'gt');
         });
     });
 
@@ -42,7 +68,6 @@ window.onload = () => {
             if(window.innerWidth < 400) {
                 document.querySelector('.bars').style.display = 'none';
                 document.querySelector('.bars').style.opacity = "0";
-            
             }
             changePage(this.id);
         },false);
