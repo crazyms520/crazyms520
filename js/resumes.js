@@ -2,7 +2,8 @@
 
 var list = ['home', 'resumes', 'projects'];
 var clist = ['cresumes', 'cprojects', 'skills'];
-var counter = 1;
+var counter = 0;
+var project = '';
 
 var changePage = function changePage(Name) {
     var name = document.querySelector('.' + Name);
@@ -19,21 +20,33 @@ var changePage = function changePage(Name) {
 };
 var showImg = function showImg(event, direction) {
     var parent = event.target.parentElement.parentElement,
-        items = parent.children[0].children[1].childElementCount;
-    console.log(items);
+        itemsCount = parent.children[0].children[1].childElementCount,
+        item = parent.children[0],
+        distance = 0;
+    if (parent.id !== project) {
+        counter = 0;
+        project = parent.id;
+    }
+    parent.children[0].children[1].children[counter].classList.remove("show");
+    parent.children[0].children[1].children[counter].style.transform = 'translateX(' + distance + 'px)';
     if (direction == 'lt') {
         counter--;
-        if (counter == 0) {
-            counter = items;
+        if (counter == -1) {
+            counter = itemsCount - 1;
         }
     } else {
         counter++;
-        if (counter == ++items) {
-            counter = 1;
+        if (counter == itemsCount) {
+            counter = 0;
         }
     }
-    console.log(counter);
-    parent.children[0].children[1].children[0].src = 'images/0' + counter + '.jpeg';
+    if (window.innerWidth < 400) {
+        distance = counter * -270;
+    } else {
+        distance = counter * -350;
+    }
+    parent.children[0].children[1].children[counter].classList.add("show");
+    parent.children[0].children[1].children[counter].style.transform = 'translateX(' + distance + 'px)';
 };
 
 window.onload = function () {
@@ -43,14 +56,14 @@ window.onload = function () {
         var mbars = document.querySelector('.bars');
         mbars.style.display = "inline-block";
         if (mbars.style.opacity == "0" || mbars.style.opacity == "") {
-            mbars.classList.add('fadein');
-            mbars.classList.remove('fadeout');
+            // mbars.classList.add('fadein');
+            // mbars.classList.remove('fadeout');
             mbars.style.opacity = "1";
         } else {
-            mbars.classList.add('fadeout');
-            mbars.classList.remove('fadein');
+            // mbars.classList.add('fadeout');  
+            // mbars.classList.remove('fadein');
+            mbars.style.opacity = "0";
         }
-        console.log(mbars.style.opacity);
     });
 
     Object.keys(document.querySelectorAll('.lt')).map(function (element) {
