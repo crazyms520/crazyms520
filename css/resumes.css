@@ -209,6 +209,8 @@ html {
         width: 350px;
         height: 350px; }
         .container div.projects .content .article .left .image img {
+          width: 350px;
+          height: 350px;
           opacity: 0;
           -webkit-box-orient: horizontal;
           -webkit-box-direction: normal;
