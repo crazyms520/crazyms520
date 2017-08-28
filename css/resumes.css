@@ -249,6 +249,11 @@ html {
         margin: 0;
         padding: 20px 0;
         text-align: center; }
+      .container div.projects .content .article .right p {
+        font-size: 20px; }
+        .container div.projects .content .article .right p a {
+          display: block;
+          text-decoration: none; }
 
 .container footer {
   position: relative;

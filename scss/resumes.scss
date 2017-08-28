@@ -276,6 +276,13 @@ html {
                         padding: 20px 0;
                         text-align: center;
                     }
+                    p {
+                        font-size: 20px;
+                        a {
+                            display: block;
+                            text-decoration: none;
+                        }
+                    }
                 }
             }
         }
