@@ -341,7 +341,7 @@ html {
           font-size: 35px; }
       .container header .header-right {
         position: absolute;
-        left: 235px;
+        left: 290px;
         width: calc(100% - 235px); }
         .container header .header-right i {
           display: inline-block;
