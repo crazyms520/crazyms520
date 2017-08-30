@@ -250,10 +250,13 @@ html {
         padding: 20px 0;
         text-align: center; }
       .container div.projects .content .article .right p {
-        font-size: 20px; }
-        .container div.projects .content .article .right p a {
-          display: block;
-          text-decoration: none; }
+        font-size: 20px;
+        margin: 0; }
+      .container div.projects .content .article .right a {
+        font-size: 20px;
+        display: block;
+        text-decoration: none;
+        margin: 10px 0; }
 
 .container footer {
   position: relative;
@@ -458,7 +461,12 @@ html {
                   -ms-flex: none;
                       flex: none;
               margin: 0;
-              padding: 20px; }
+              padding: 20px;
+              text-align: left; }
+              .container div.resumes .content .left .article p a {
+                text-decoration: none; }
+            .container div.resumes .content .left .article:nth-child(2) p, .container div.resumes .content .left .article:nth-child(3) p {
+              text-align: center; }
         .container div.resumes .content .right {
           -webkit-box-flex: 0;
               -ms-flex: none;

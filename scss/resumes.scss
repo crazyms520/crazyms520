@@ -4,6 +4,7 @@ html {
     body {
         margin: 0;
         background-color: rgba(231, 225, 225, 1.00);
+        
     }
 }
 .container {
@@ -278,10 +279,13 @@ html {
                     }
                     p {
                         font-size: 20px;
-                        a {
-                            display: block;
-                            text-decoration: none;
-                        }
+                        margin: 0;
+                    }
+                    a {
+                        font-size: 20px;
+                        display: block;
+                        text-decoration: none;
+                        margin: 10px 0;
                     }
                 }
             }
@@ -504,6 +508,17 @@ html {
                             flex: none;
                             margin: 0;
                             padding: 20px;
+                            text-align: left;
+                            
+                            a{
+                                text-decoration: none;
+                            }
+                        }
+                        &:nth-child(2),&:nth-child(3) {
+                            p{
+                                text-align: center;
+                            
+                            }
                         }
                     }
                 }
