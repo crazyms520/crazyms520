@@ -50,8 +50,6 @@ var showImg = function showImg(event, direction) {
 };
 
 window.onload = function () {
-    var a = document.querySelector('#project1');
-    changePage('projects');
     document.querySelector('.icon-bars').addEventListener('click', function () {
         var mbars = document.querySelector('.bars');
         mbars.style.display = "inline-block";

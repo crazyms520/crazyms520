@@ -49,8 +49,6 @@ let showImg = (event,direction) => {
 }
 
 window.onload = () => {
-    let a = document.querySelector('#project1');
-    changePage('projects');
     document.querySelector('.icon-bars').addEventListener('click', () => {
         let mbars = document.querySelector('.bars');
         mbars.style.display = "inline-block";
