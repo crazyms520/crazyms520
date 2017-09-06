@@ -47,7 +47,6 @@ let showImg = (event,direction) => {
     parent.children[0].children[1].children[counter].style.transform = `translateX(${distance}px)`;
     
 }
-
 window.onload = () => {
     document.querySelector('.icon-bars').addEventListener('click', () => {
         let mbars = document.querySelector('.bars');

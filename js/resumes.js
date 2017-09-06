@@ -48,7 +48,6 @@ var showImg = function showImg(event, direction) {
     parent.children[0].children[1].children[counter].classList.add("show");
     parent.children[0].children[1].children[counter].style.transform = 'translateX(' + distance + 'px)';
 };
-
 window.onload = function () {
     document.querySelector('.icon-bars').addEventListener('click', function () {
         var mbars = document.querySelector('.bars');
